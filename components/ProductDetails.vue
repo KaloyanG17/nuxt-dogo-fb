@@ -7,7 +7,6 @@
          <div class="p-7">
             <h2 class="text-4xl my-7"> {{ product.title }}</h2>
             <p class="text-xl my-7">Price - ${{ product.price }}</p>
-            <p class="text-xl my-7">Price - £{{ toGBP }}</p>
             <h3 class="font-bold border-b-2 mb-4 pb-2">Product description: </h3>
             <p class="mb-7">{{  product.description }}</p>
             <button class='btn flex'>
@@ -22,8 +21,6 @@
 <script setup>
 const { product } = defineProps(['product'])
 
-const { data } = await useFetch('/api/currency/GBP');
-const toGBP = (product.price * data.value.GBP.value).toFixed(2);
 </script>
 
 <style  scoped>
