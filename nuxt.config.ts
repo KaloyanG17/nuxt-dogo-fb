@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@nuxt/content'],
   app: {
     head: {
       title: 'Nuxt Dojo',
@@ -15,4 +15,5 @@ export default defineNuxtConfig({
   runtimeConfig: {
     currencyKey: process.env.CURRENCY_API_KEY
   }
+  
 })

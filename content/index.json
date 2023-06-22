@@ -1,0 +1,12 @@
+{
+   "products": [
+      {
+         "id": 100,
+         "name": "Product 1",
+         "price": 100,
+         "image": "https://picsum.photos/200/300",
+         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, quis ultricies nisl nisl nec nisl. Sed euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, quis ultricies nisl nisl nec nisl.",
+         "category": "Category 1"
+      }
+   ]
+}

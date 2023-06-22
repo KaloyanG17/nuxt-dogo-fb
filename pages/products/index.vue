@@ -9,6 +9,15 @@
 </template>
 
 <script setup>
+import { useMainStore } from '~~/store/index.js'
+import { storeToRefs } from 'pinia';
+
+const mainStore = useMainStore();
+const { cart, getCart, totalCount, totalPrice } = storeToRefs(mainStore)
+mainStore.getCart()
+const filter = ref('all')
+
+
 definePageMeta({
     layout: 'products'
 })
