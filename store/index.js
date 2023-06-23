@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia';
 import axios from 'axios'
+// import { getAuth, sendSignInLinkToEmail } from "firebase/auth";
 
 export const useMainStore = defineStore('main', {
    state: () => ({
@@ -98,11 +99,8 @@ export const useMainStore = defineStore('main', {
                console.log(res.error)
              }
          }
-
-
-
       },
-
+      
       getQuantity(id) {
          const product = this.cart.find(t => {
            return t.id === id

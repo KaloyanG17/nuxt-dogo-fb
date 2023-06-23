@@ -4,6 +4,7 @@
             <nav class="container mx-auto p-4 flex justify-between">
                 <NuxtLink to="/products">Nuxt Dojo Merch</NuxtLink>
                 <ul class="flex gap-4">
+                    <li><NuxtLink to="/account" class="btn">Account</NuxtLink></li>
                     <li><NuxtLink to="/products/cart" class="btn">Cart ({{ totalCount  }})</NuxtLink></li>
                 </ul>
             </nav>
